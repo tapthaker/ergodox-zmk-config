@@ -11,6 +11,14 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        m_esc_colon: m_esc_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp ESC &kp COLON> ;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
         layer_0 {
@@ -69,14 +77,5 @@
             >;
         };
     };
-
-    ZMK_MACRO(m_esc_colon,
-        wait-ms = <10>;
-        tap-ms = <10>;
-        bindings = <
-            &kp ESC
-            &kp COLON
-        >;
-    );
 };
 
