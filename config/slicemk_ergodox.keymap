@@ -38,10 +38,10 @@
         layer_1 {
             bindings = <
                 &sys_off
-                &none &none &none &none &none &none &none &none &none          &none          &none        &none           &none &kp C_VOLUME_UP
-                &none &none &none &none &none &none &none &none &kp HOME       &none          &none        &kp END         &none &kp C_VOLUME_DOWN
-                &none &none &none &none &none &none             &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none &kp LG(PLUS)
-                &none &none &none &none &none &none &none &none &none          &none          &none        &none           &none &kp LG(MINUS)
+                &none &none &none &none &none &none &none &kp PRINTSCREEN &none          &none          &none        &none           &none &kp C_VOLUME_UP
+                &none &none &none &none &none &none &none &none &kp HOME       &none          &none        &kp END         &kp LG(PLUS) &kp C_VOLUME_DOWN
+                &none &none &none &none &none &none             &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &kp LG(MINUS) &kp PG_UP
+                &none &none &none &none &none &none &none &none &none          &none          &none        &none           &none &kp PG_DN
                 &none &none &none &none &none                                  &none          &none        &none           &none &none
                                                &none &none &none &none
                                      &none &none &none &none &none          &none

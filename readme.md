@@ -16,6 +16,7 @@ Discord](https://discord.gg/FQvyd7BAaA).
 # Customization
 
 - To modify your keymap, edit `config/slicemk_ergodox.keymap`.
+- When changing the keymap, also update `docs/keymap-layout.md` so the documented layout stays in sync with the code.
 - If you are using a dongle, add custom ZMK configuration options to
   `config/slicemk_ergodox_dongle.conf`. If you are not using a dongle, custom
   options should instead go in `config/slicemk_ergodox_leftcentral.conf`.
