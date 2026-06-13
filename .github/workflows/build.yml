@@ -1,8 +1,5 @@
 on: [push, pull_request, workflow_dispatch]
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   matrix:
     runs-on: ubuntu-22.04
@@ -143,7 +140,7 @@ jobs:
           fi
 
       - name: Archive (${{ env.display_name }})
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@main
         with:
           name: artifact-${{ env.artifact_name }}
           path: ${{ env.build_dir }}/artifacts
@@ -154,7 +151,7 @@ jobs:
     name: Merge Output Artifacts
     steps:
       - name: Merge Artifacts
-        uses: actions/upload-artifact/merge@v5
+        uses: actions/upload-artifact/merge@main
         with:
           name: firmware
           pattern: artifact-*
